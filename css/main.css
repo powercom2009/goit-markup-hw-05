@@ -575,6 +575,7 @@ li .focus-hover:focus {
 }
 
 .hero {
+  margin-bottom: 94px;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -584,8 +585,7 @@ li .focus-hover:focus {
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url('../Images/Header.jpg');
-  margin-bottom: 94px;
+    url('../images/Header.jpg');
 }
 
 .background-icon {
