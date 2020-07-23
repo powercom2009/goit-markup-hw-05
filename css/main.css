@@ -87,18 +87,6 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-title {
-  color: var(--primery-bg-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-top: 0px;
-}
-
 .list-item {
   font-weight: normal;
   font-size: 14px;
@@ -427,6 +415,20 @@ li .focus-hover:focus {
   margin-left: auto;
 }
 
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/Header.jpg');
+}
+
 .hero-title {
   max-width: 700px;
   text-align: center;
@@ -434,11 +436,11 @@ li .focus-hover:focus {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin: 0 auto;
-
-  margin-bottom: 0px;
-  padding-top: 200px;
-  padding-bottom: 43px;
+  margin-top: 0px;
+  margin-bottom: 43px;
+  color: var(--primery-bg-color);
 }
 
 .hero-button {
@@ -539,6 +541,11 @@ li .focus-hover:focus {
   padding-bottom: 94px;
 }
 
+.project-indent-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .button-indent {
   padding-bottom: 50px;
 }
@@ -572,20 +579,6 @@ li .focus-hover:focus {
 
 .item:last-child {
   margin-right: 0px;
-}
-
-.hero {
-  margin-bottom: 94px;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url('../images/Header.jpg');
 }
 
 .background-icon {
