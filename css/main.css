@@ -4,7 +4,7 @@
   --accent-color: #2196f3;
   --primery-bg-color: #ffffff;
   --secondary-color: #afb1b8;
-  --timing-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-animation: 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -503,6 +503,8 @@ li .focus-hover:focus {
   height: 90px;
   border: solid 1px var(--secondary-color);
   fill: var(--secondary-color);
+  transition: var(--timing-animation), border var(--timing-animation),
+    fill var(--timing-animation);
 }
 
 .companys-list {
@@ -513,17 +515,13 @@ li .focus-hover:focus {
   margin-bottom: auto;
 }
 
-.company-logo:hover,
-.company-logo:focus {
-  fill: var(--accent-color);
+.timing-animation:hover,
+.timing-animation:focus {
   border: solid 1px var(--accent-color);
-  --color3: var(--accent-color);
-}
-
-.icon:hover,
-.icon:focus {
-  fill: var(--accent-color);
-  color: var(--accent-color);
+  --color3:  var(--accent-color);
+  transition: var(--timing-animation), --color3: var(timing-animation),
+    fill var(--timing-animation);
+  
 }
 
 .project-indent {
@@ -732,7 +730,7 @@ hr {
 
 .portfolio-text-overlay {
   margin-top: 0px;
-
+  box-sizing: border-box;
   color: var(--primery-bg-color);
 
   padding-left: 24px;
